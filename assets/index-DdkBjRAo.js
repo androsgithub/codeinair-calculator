@@ -15,7 +15,7 @@ function _mergeNamespaces(n2, m2) {
       }
     }
   }
-  return Object.freeze(Object.defineProperty(n2, Symbol.toStringTag, { value: "Module" }));
+  return Object.defineProperty(n2, Symbol.toStringTag, { value: "Module" });
 }
 (function polyfill() {
   const relList = document.createElement("link").relList;
@@ -13158,7 +13158,7 @@ const tslib_es6 = {
   __addDisposableResource,
   __disposeResources
 };
-const tslib_es6$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const tslib_es6$1 = /* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   __addDisposableResource,
   get __assign() {
@@ -13194,17 +13194,17 @@ const tslib_es6$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineP
   __spreadArrays,
   __values,
   default: tslib_es6
-}, Symbol.toStringTag, { value: "Module" }));
+}, Symbol.toStringTag, { value: "Module" });
 const require$$0 = /* @__PURE__ */ getAugmentedNamespace(tslib_es6$1);
 var warning = function() {
 };
 var invariant = function() {
 };
-const heyListen_es = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const heyListen_es = /* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   invariant,
   warning
-}, Symbol.toStringTag, { value: "Module" }));
+}, Symbol.toStringTag, { value: "Module" });
 const require$$2 = /* @__PURE__ */ getAugmentedNamespace(heyListen_es);
 var valueTypes_cjs = {};
 Object.defineProperty(valueTypes_cjs, "__esModule", { value: true });
@@ -15990,7 +15990,7 @@ function createStyleString(target = {}) {
   }
   return style2;
 }
-const index_es = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const index_es = /* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   ScrollOffset,
   animate,
@@ -16010,7 +16010,7 @@ const index_es = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
   style,
   timeline,
   withControls
-}, Symbol.toStringTag, { value: "Module" }));
+}, Symbol.toStringTag, { value: "Module" });
 const require$$6 = /* @__PURE__ */ getAugmentedNamespace(index_es);
 function memoize(fn) {
   var cache = {};
@@ -16027,10 +16027,10 @@ var index$2 = memoize(
   }
   /* Z+1 */
 );
-const isPropValid_browser_esm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const isPropValid_browser_esm = /* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: index$2
-}, Symbol.toStringTag, { value: "Module" }));
+}, Symbol.toStringTag, { value: "Module" });
 const require$$7 = /* @__PURE__ */ getAugmentedNamespace(isPropValid_browser_esm);
 (function(exports) {
   var define_process_env_default = {};
@@ -28994,7 +28994,7 @@ const useInteractions = function(propsList) {
     getItemProps
   }), [getReferenceProps, getFloatingProps, getItemProps]);
 };
-const floatingUi_react_esm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const floatingUi_react_esm = /* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   FloatingDelayGroup,
   FloatingFocusManager,
@@ -29038,7 +29038,7 @@ const floatingUi_react_esm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Objec
   useTransitionStatus,
   useTransitionStyles,
   useTypeahead
-}, Symbol.toStringTag, { value: "Module" }));
+}, Symbol.toStringTag, { value: "Module" });
 const require$$1 = /* @__PURE__ */ getAugmentedNamespace(floatingUi_react_esm);
 var DialogHeader = {};
 (function(exports) {
