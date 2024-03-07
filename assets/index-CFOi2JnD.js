@@ -9080,7 +9080,7 @@ function useViewTransitionState(to, opts) {
   let nextPath = stripBasename(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
   return matchPath(path.pathname, nextPath) != null || matchPath(path.pathname, currentPath) != null;
 }
-const logo = "/assets/logo-p-WjnME3DX.png";
+const logo = "/codeinair-calculator/assets/logo-p-WjnME3DX.png";
 const selected = "_selected_16p5i_1";
 const styles$2 = {
   selected,
