@@ -36020,9 +36020,12 @@ function SaveCountCard({ count: count2, result: result2, countParams }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: `${styles.card} flex flex-col py-4 ps-14 gap-2`, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 ", children: count2 }),
     countParams.valuesToCalculate && Object.keys(countParams.valuesToCalculate).map((key) => /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-      countParams.valuesToCalculate[key][0].toUpperCase(),
-      " =",
+      countParams.valuesToCalculate[key][0].length == 2 ? countParams.valuesToCalculate[key][0].toUpperCase().substring(
+        0,
+        countParams.valuesToCalculate[key][0].length - 1
+      ) : countParams.valuesToCalculate[key][0].toUpperCase(),
       " ",
+      "= ",
       countParams.valuesToCalculate[key][1],
       " ",
       countParams.typesToCalculate[`${key[0].toUpperCase()}_type`][1]
