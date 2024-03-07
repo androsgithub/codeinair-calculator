@@ -9088,12 +9088,12 @@ const styles$2 = {
 };
 function Navbar$1() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("header", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "flex justify-between items-center py-5 px-[2.5rem]", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/home", className: "w-[2.5rem]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: logo, alt: "" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "codeinair-calculator/home", className: "w-[2.5rem]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: logo, alt: "" }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex  w-[30%] justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         NavLink,
         {
-          to: "calculator",
+          to: "codeinair-calculator/calculator",
           className: ({ isActive }) => {
             return [isActive ? styles$2.selected : ""].join(" ") + " font-semibold text-[1.05rem]";
           },
@@ -9103,7 +9103,7 @@ function Navbar$1() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         NavLink,
         {
-          to: "history",
+          to: "codeinair-calculator/history",
           className: ({ isActive }) => {
             return [isActive ? styles$2.selected : ""].join(" ") + " font-semibold text-[1.05rem]";
           },
@@ -36313,8 +36313,8 @@ function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(BrowserRouter, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar$1, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/calculator", element: /* @__PURE__ */ jsxRuntimeExports.jsx(CalculatorPage, {}) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/history", element: /* @__PURE__ */ jsxRuntimeExports.jsx(HistoryPage, {}) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/codeinair-calculator/calculator", element: /* @__PURE__ */ jsxRuntimeExports.jsx(CalculatorPage, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/codeinair-calculator/history", element: /* @__PURE__ */ jsxRuntimeExports.jsx(HistoryPage, {}) })
     ] })
   ] });
 }
