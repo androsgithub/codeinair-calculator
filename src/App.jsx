@@ -11,8 +11,8 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/calculator" element={<CalculatorPage />} />
-        <Route path="/history" element={<HistoryPage />} />
+        <Route path="/codeinair-calculator/calculator" element={<CalculatorPage />} />
+        <Route path="/codeinair-calculator/history" element={<HistoryPage />} />
       </Routes>
     </BrowserRouter>
   );

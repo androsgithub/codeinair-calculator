@@ -75,7 +75,10 @@ export default function Calculator() {
     Object.keys(formValues).forEach((valor, index) => {
       if (!valor.toString().substring(1).includes("_type")) {
         console.log();
-        valuesToCalculate[parameterNamesOfFunction[index]] = formValues[valor];
+        valuesToCalculate[valor] = [
+          parameterNamesOfFunction[index],
+          formValues[valor],
+        ];
       } else {
         if (index == 0) {
           typesToCalculate[
@@ -84,11 +87,12 @@ export default function Calculator() {
               .toUpperCase()}_type`
           ] = formValues[valor];
         } else {
-          typesToCalculate[
+          typesToCalculate[valor] = [
             `${parameterNamesOfFunction[Math.round(index / 2 - 1)]
               .toString()
-              .toUpperCase()}_type`
-          ] = formValues[valor];
+              .toUpperCase()}_type`,
+            formValues[valor],
+          ];
         }
       }
     });
@@ -97,8 +101,10 @@ export default function Calculator() {
       return;
     }
 
+    console.log(Object.values(valuesToCalculate));
+
     const calculatedResult = Contas[selectCount](
-      ...Object.values(valuesToCalculate)
+      ...Object.values(valuesToCalculate).map((lista) => lista[1])
     );
     setResult(calculatedResult);
 

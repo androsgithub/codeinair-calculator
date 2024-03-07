@@ -6,12 +6,12 @@ export default function Navbar() {
   return (
     <header>
       <nav className="flex justify-between items-center py-5 px-[2.5rem]">
-        <Link to="/home" className="w-[2.5rem]">
+        <Link to="codeinair-calculator/home" className="w-[2.5rem]">
           <img src={logo} alt="" />
         </Link>
         <div className="flex  w-[30%] justify-between">
           <NavLink
-            to="calculator"
+            to="codeinair-calculator/calculator"
             className={({ isActive }) => {
               return (
                 [isActive ? styles.selected : ""].join(" ") +
@@ -22,7 +22,7 @@ export default function Navbar() {
             Calculadora
           </NavLink>
           <NavLink
-            to="history"
+            to="codeinair-calculator/history"
             className={({ isActive }) => {
               return (
                 [isActive ? styles.selected : ""].join(" ") +
