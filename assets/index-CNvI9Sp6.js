@@ -35970,6 +35970,7 @@ function Count({ count: count2, handleResults, children }) {
   const [ultimoResultado, setUltimoResultado] = reactExports.useState();
   const [keyRandom, setKeyRandom] = reactExports.useState(Math.random());
   reactExports.useEffect(() => {
+    console.log(count2);
     setResultados({});
     setKeyRandom(Math.random());
   }, [count2]);
@@ -36550,4 +36551,4 @@ function App() {
 client.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(React.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(react.ThemeProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })
 );
-//# sourceMappingURL=index-DEjLoxYW.js.map
+//# sourceMappingURL=index-CNvI9Sp6.js.map
