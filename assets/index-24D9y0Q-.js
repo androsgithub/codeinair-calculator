@@ -36000,7 +36000,7 @@ function Count({ count: count2, handleResults, children }) {
     for (let k2 in valuesToCalculate) {
       console.log({ k: k2 });
       for (let l2 in funcParams) {
-        console.log({ l: l2 });
+        console.log({ l: funcParams[l2] });
         if (k2 == funcParams[l2]) {
           paramsInOrder.push(valuesToCalculate[k2]);
         }
@@ -36554,4 +36554,4 @@ function App() {
 client.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(React.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(react.ThemeProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })
 );
-//# sourceMappingURL=index-BwtzTWXF.js.map
+//# sourceMappingURL=index-24D9y0Q-.js.map
