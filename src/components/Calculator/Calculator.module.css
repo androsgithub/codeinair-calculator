@@ -1,0 +1,120 @@
+.calculator_div {
+  animation: booting 0.4s ease;
+}
+.calculator {
+  min-width: 500px;
+  max-width: 500px;
+  border-radius: 1rem;
+}
+
+.select_count {
+  padding: 0.6rem 0.4rem;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 100rem;
+  background-color: #f1f1f1; /*f6f6f6*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Estilos específicos para a seta */
+  background-image: url("images/seta.png"); /* Substitua pelo caminho da sua imagem */
+  background-position: calc(100% - 30px) center; /* Ajusta a posição da imagem de fundo */
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.count_father {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1; /*f6f6f6*/
+  padding: 1.5rem;
+  margin: 1rem 0 0 0;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.count_father > .count_placeholder {
+  height: 30px;
+}
+
+.count_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.result {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.218);
+  border-radius: 0.35rem;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  color: rgb(91, 91, 91);
+  & > *::after,
+  & > *::before {
+    display: none;
+  }
+  & > div,
+  & > div > div,
+  & > div > div > label,
+  & > div > div > button {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+.result button {
+  padding: 0;
+}
+.result span {
+  padding: 0;
+}
+.tempCountsCircle {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.2rem;
+  border-radius: 100rem;
+  border: 1px solid rgb(221, 221, 221);
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  position: absolute;
+  top: 55px;
+  right: -20px;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px), contrast(100);
+}
+
+.logo_floating {
+  animation: floating 2s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes booting {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

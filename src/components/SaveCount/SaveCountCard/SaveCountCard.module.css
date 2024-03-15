@@ -1,0 +1,10 @@
+.card {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../../../assets/paper-card.png);
+}
+.card p {
+  font-size: 1rem;
+}
